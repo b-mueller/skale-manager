@@ -1,0 +1,34 @@
+analyze:
+    async: true
+    create-group: true
+    solc: 0.5.16
+    remappings:
+        - "@openzeppelin/={pwd}/node_modules/@openzeppelin/"
+        - "@nomiclabs={pwd}/node_modules/@nomiclabs/"
+    targets:
+        - contracts/ConstantsHolder.sol:ConstantsHolder
+        - contracts/ContractManager.sol:ContractManager
+        - contracts/Decryption.sol:Decryption
+        - contracts/ECDH.sol:ECDH
+        - contracts/GroupsData.sol:GroupsData
+        - contracts/ManagerData.sol:ManagerData
+        - contracts/NodesFunctionality.sol:NodesFunctionality
+        - contracts/Permissions.sol:Permissions
+        - contracts/Pricing.sol:Pricing
+        - contracts/SchainsData.sol:SchainsData
+        - contracts/SchainsFunctionality.sol:SchainsFunctionality
+        - contracts/SchainsFunctionalityInternal.sol:SchainsFunctionalityInternal
+        - contracts/SkaleDKG.sol:SkaleDKG
+        - contracts/SkaleManager.sol:SkaleManager
+        - contracts/SkaleToken.sol:SkaleToken
+        - contracts/SkaleVerifier.sol:SkaleVerifier
+        - contracts/SlashingTable.sol:SlashingTable
+        - contracts/delegation/DelegationController.sol:DelegationController
+        - contracts/delegation/DelegationPeriodManager.sol:DelegationPeriodManager
+        - contracts/delegation/Distributor.sol:Distributor
+        - contracts/delegation/Punisher.sol:Punisher
+        - contracts/delegation/TimeHelpers.sol:TimeHelpers
+        - contracts/delegation/TokenLaunchLocker.sol:TokenLaunchLocker
+        - contracts/delegation/TokenLaunchManager.sol:TokenLaunchManager
+        - contracts/delegation/TokenState.sol:TokenState
+        - contracts/delegation/ValidatorService.sol:ValidatorService
